@@ -1,6 +1,3 @@
-/* ==========================================================================
-   VALORANT ACADEMY GLOBAL STYLES & VARIABLE OVERRIDES
-   ========================================================================== */
 :root {
     --v-dark-bg: #0f1923;      /* Signature Valorant UI Dark Slate */
     --v-dark-alt: #172432;     /* Card background Slate */
@@ -15,7 +12,6 @@ body.v-theme-dark {
     overflow-x: hidden;
 }
 
-/* Helper Utilities */
 .v-accent { color: var(--v-red) !important; }
 .text-v-muted { color: var(--v-muted-text) !important; }
 .bg-v-dark { background-color: var(--v-dark-bg) !important; }
@@ -26,16 +22,14 @@ body.v-theme-dark {
 .h-2px { height: 2px; }
 .opacity-4 { opacity: 0.4; }
 
-/* Custom Font Sizing Adjustments */
+/* font sizing adjustments */
 .fs-75 { font-size: 0.75rem; }
 .fs-85 { font-size: 0.85rem; }
 .fs-9 { font-size: 0.9rem; }
 .fs-95 { font-size: 0.95rem; }
 .lh-17 { line-height: 1.7; }
 
-/* ==========================================================================
-   NAVIGATION BAR COMPONENT
-   ========================================================================== */
+/* navbar section */
 .custom-navbar {
     background-color: #0b1118;
     border-bottom: 2px solid var(--v-border-dark);
@@ -69,9 +63,7 @@ body.v-theme-dark {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ff4655' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* ==========================================================================
-   HERO / HOME SECTION
-   ========================================================================== */
+/* home section */
 .hero-header {
     height: 60vh;
     min-height: 400px;
@@ -93,7 +85,6 @@ body.v-theme-dark {
     border-radius: 8px;
 }
 
-/* Tactical Custom Accent Button */
 .btn-v-accent {
     background-color: var(--v-red);
     color: #ffffff !important;
@@ -112,9 +103,7 @@ body.v-theme-dark {
     transform: translateY(1px);
 }
 
-/* ==========================================================================
-   INTRO & FEATURED COMPONENTS (DARK THEME MODES)
-   ========================================================================== */
+/* introduction section */
 .section-title {
     color: #ffffff;
     letter-spacing: 1px;
@@ -161,9 +150,7 @@ body.v-theme-dark {
     border-radius: 4px;
 }
 
-/* ==========================================================================
-   CATEGORIES SECTION COMPONENTS (LIGHT CARD INVERSIONS)
-   ========================================================================== */
+/* categories section */
 .v-card-light {
     background-color: #ffffff !important;
 }
@@ -186,15 +173,12 @@ body.v-theme-dark {
     transform: translateX(4px);
 }
 
-/* Gradient Category Image Backdrops */
 .v-gradient-1 { background: linear-gradient(180deg, #34495e 0%, #1a252f 100%); }
 .v-gradient-2 { background: linear-gradient(180deg, #2c3e50 0%, var(--v-dark-bg) 100%); }
 .v-gradient-3 { background: linear-gradient(180deg, #4a5568 0%, #2d3748 100%); }
 .v-gradient-4 { background: linear-gradient(180deg, #718096 0%, #4a5568 100%); }
 
-/* ==========================================================================
-   RESOURCES & ABOUT MODULE HUD COMPONENTS
-   ========================================================================== */
+/* resources and about section */
 .v-report-box {
     background-color: var(--v-dark-alt);
     border-left: 5px solid var(--v-red);
@@ -220,9 +204,7 @@ body.v-theme-dark {
     background-color: rgba(163, 163, 163, 0.25);
 }
 
-/* ==========================================================================
-   FOOTER PATTERNS
-   ========================================================================== */
+/* footer section */
 .main-footer {
     background-color: #0b1118;
     border-top: 1px solid var(--v-border-dark);
