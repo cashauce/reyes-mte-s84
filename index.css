@@ -1,0 +1,230 @@
+/* ==========================================================================
+   VALORANT ACADEMY GLOBAL STYLES & VARIABLE OVERRIDES
+   ========================================================================== */
+:root {
+    --v-dark-bg: #0f1923;      /* Signature Valorant UI Dark Slate */
+    --v-dark-alt: #172432;     /* Card background Slate */
+    --v-red: #ff4655;          /* Signature Riot Valorant Red */
+    --v-muted-text: #a3a3a3;   /* High-contrast accessible grey text */
+    --v-border-dark: #243547;  /* Accent borders */
+}
+
+body.v-theme-dark {
+    background-color: var(--v-dark-bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Helper Utilities */
+.v-accent { color: var(--v-red) !important; }
+.text-v-muted { color: var(--v-muted-text) !important; }
+.bg-v-dark { background-color: var(--v-dark-bg) !important; }
+.bg-v-dark-alt { background-color: #0b121a !important; }
+.bg-v-red { background-color: var(--v-red) !important; }
+.border-top-v { border-top: 1px solid var(--v-border-dark) !important; }
+.max-w-750 { max-width: 750px; }
+.h-2px { height: 2px; }
+.opacity-4 { opacity: 0.4; }
+
+/* Custom Font Sizing Adjustments */
+.fs-75 { font-size: 0.75rem; }
+.fs-85 { font-size: 0.85rem; }
+.fs-9 { font-size: 0.9rem; }
+.fs-95 { font-size: 0.95rem; }
+.lh-17 { line-height: 1.7; }
+
+/* ==========================================================================
+   NAVIGATION BAR COMPONENT
+   ========================================================================== */
+.custom-navbar {
+    background-color: #0b1118;
+    border-bottom: 2px solid var(--v-border-dark);
+}
+
+.custom-navbar .navbar-brand {
+    color: #ffffff;
+    letter-spacing: 1.5px;
+}
+
+.custom-navbar .target-link {
+    color: var(--v-muted-text);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: color 0.2s ease-in-out;
+}
+
+.custom-navbar .target-link:hover,
+.custom-navbar .target-link:focus {
+    color: var(--v-red);
+}
+
+/* Custom Tactical Hambuger Button Styling */
+.custom-toggler {
+    border: 1px solid var(--v-red);
+    padding: 0.25rem 0.5rem;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ff4655' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ==========================================================================
+   HERO / HOME SECTION
+   ========================================================================== */
+.hero-header {
+    height: 60vh;
+    min-height: 400px;
+}
+
+.hero-bg-img {
+    object-fit: cover;
+}
+
+.hero-overlay {
+    background-color: rgba(15, 25, 35, 0.65); /* dark industrial overlay tint */
+}
+
+.hero-text-frame {
+    background: rgba(11, 17, 24, 0.8);
+    padding: 2.5rem 3.5rem;
+    border: 1px solid var(--v-border-dark);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* Tactical Custom Accent Button */
+.btn-v-accent {
+    background-color: var(--v-red);
+    color: #ffffff !important;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    transition: background-color 0.15s ease-in-out, transform 0.1s ease;
+}
+
+.btn-v-accent:hover {
+    background-color: #e53e4e;
+    transform: translateY(-1px);
+}
+
+.btn-v-accent:active {
+    transform: translateY(1px);
+}
+
+/* ==========================================================================
+   INTRO & FEATURED COMPONENTS (DARK THEME MODES)
+   ========================================================================== */
+.section-title {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.section-title-large {
+    letter-spacing: 1px;
+}
+
+.card-icon-v {
+    font-size: 2.5rem;
+    color: var(--v-red);
+}
+
+.v-card-dark {
+    background-color: var(--v-dark-alt) !important;
+    color: #ffffff;
+}
+
+.v-card-dark-bordered {
+    background-color: var(--v-dark-alt) !important;
+    border: 1px solid var(--v-border-dark) !important;
+}
+
+.card-title-hero {
+    font-size: 1.75rem;
+    letter-spacing: 0.5px;
+}
+
+.v-badge-outline {
+    background-color: rgba(255, 70, 85, 0.1);
+    color: var(--v-red);
+    border: 1px solid rgba(255, 70, 85, 0.3);
+    padding: 0.5rem 0.75rem;
+}
+
+.border-v-muted {
+    border-color: rgba(163, 163, 163, 0.15) !important;
+}
+
+.btn-outline-v-muted {
+    border: 1px solid var(--v-border-dark);
+    color: var(--v-muted-text);
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   CATEGORIES SECTION COMPONENTS (LIGHT CARD INVERSIONS)
+   ========================================================================== */
+.v-card-light {
+    background-color: #ffffff !important;
+}
+
+.card-title-light {
+    font-size: 1.25rem;
+    color: var(--v-dark-bg) !important;
+}
+
+.v-link-red {
+    color: var(--v-red);
+    transition: transform 0.2s ease-out;
+}
+
+.v-link-red:hover {
+    color: #e53e4e;
+}
+
+.v-link-red:hover i {
+    transform: translateX(4px);
+}
+
+/* Gradient Category Image Backdrops */
+.v-gradient-1 { background: linear-gradient(180deg, #34495e 0%, #1a252f 100%); }
+.v-gradient-2 { background: linear-gradient(180deg, #2c3e50 0%, var(--v-dark-bg) 100%); }
+.v-gradient-3 { background: linear-gradient(180deg, #4a5568 0%, #2d3748 100%); }
+.v-gradient-4 { background: linear-gradient(180deg, #718096 0%, #4a5568 100%); }
+
+/* ==========================================================================
+   RESOURCES & ABOUT MODULE HUD COMPONENTS
+   ========================================================================== */
+.v-report-box {
+    background-color: var(--v-dark-alt);
+    border-left: 5px solid var(--v-red);
+}
+
+.v-badge-solid {
+    background-color: var(--v-dark-bg);
+    color: #ffffff;
+}
+
+.v-hud-box {
+    background: linear-gradient(135deg, var(--v-dark-alt) 0%, #0b1118 100%);
+    min-height: 350px;
+    border: 1px solid var(--v-border-dark);
+}
+
+.display-icon-v {
+    font-size: 3.5rem;
+    color: var(--v-red);
+}
+
+.bg-v-muted-opaque {
+    background-color: rgba(163, 163, 163, 0.25);
+}
+
+/* ==========================================================================
+   FOOTER PATTERNS
+   ========================================================================== */
+.main-footer {
+    background-color: #0b1118;
+    border-top: 1px solid var(--v-border-dark);
+    color: var(--v-muted-text);
+}
